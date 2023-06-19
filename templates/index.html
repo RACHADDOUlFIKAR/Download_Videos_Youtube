@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Youtube Videos Download Script code - Rachad</title>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-alpha1/css/bootstrap.min.css">
+  <style>
+    .video-download {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  height: 100%;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.form {
+  display: inline-block;
+  text-align: left;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.form-input,
+.form-select {
+  display: block;
+  width: 100%;
+  height: 50px;
+  padding: 3px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0069d9;
+}
+
+  </style>
+</head>
+<body >
+  <section class="video-download">
+    <div class="container">
+      <h2 class="title">Télécharger la vidéo </h2>
+      <form class="form"  method="post">
+        <div class="form-group">
+          <label for="video-url" class="form-label">URL de la vidéo : <b style="color: green;">{% if stream %}Videos Download Successfully!{% endif %}</b></label>
+          <input type="text" id="video-url" name="text" class="form-input" required>
+        </div>
+        <div class="form-group">
+          <label for="video-format" class="form-label">Format :</label>
+          <select id="video-format" name="select" class="form-select">
+            <option value="value2" >MP3</option>
+            <option value="value3">MP4</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Télécharger</button>
+      </form>
+    </div>
+  </section><b>
+</body>
+</html
